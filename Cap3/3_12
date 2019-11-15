@@ -11,6 +11,9 @@ for i = 1:size(img12,1)
     endfor
 endfor
 
+imshow(img12modb,[0,255])
+print -djpg 3_12b.jpg
+
 img12modc = img12;
 for i = 1:size(img12,1)
     for j = 1:size(img12,2)
@@ -19,3 +22,6 @@ for i = 1:size(img12,1)
         endif
     endfor
 endfor
+
+imshow(img12modc,[0,255])
+print -djpg 3_12c.jpg
